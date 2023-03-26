@@ -30,6 +30,7 @@ set.foldenable = false
 --Netrw Setting
 let.netrw_altv = 1
 let.netrw_localrmdir='rm -r'
+let.nettw_sizestyle='h'
 
 -- Tools with leader
 let.mapleader = ' '
@@ -49,10 +50,10 @@ key.set('n', '<leader>r', ':reg<CR>')
 key.set('n', '<leader>B', ':buffers<CR>')
 key.set('n', '<leader>m', ':e ~/Documents/ObsidianLinux/Notes<CR>')
 
-key.set('n', 'J', '}')
-key.set('n', 'K', '{')
-key.set('n', 'H', '_')
-key.set('n', 'L', '$')
+-- key.set('n', 'J', '}')
+-- key.set('n', 'K', '{')
+-- key.set('n', 'H', '_')
+-- key.set('n', 'L', '$')
 
 key.set('v', '<leader>y', '"+y')
 key.set('n', '<leader>Y', '"+yg_')
