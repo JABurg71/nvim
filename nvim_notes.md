@@ -1,7 +1,5 @@
 This is where I'll make notes about what I can do/add to my neovim setup.
 
-Add the pairs feature in neovim
-
 11-26-2023 @ 08:55 
 tagbar for the variable list in neovim. - requires ctags. 
 - Is this something that could be helpfull.
