@@ -70,7 +70,7 @@ require('lazy').setup {
             },
         },
     },
-    'github/copilot.vim',
+    --'github/copilot.vim',
     {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
