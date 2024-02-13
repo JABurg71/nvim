@@ -50,21 +50,22 @@ require('lazy').setup {
 
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
-
-    { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
+    { 'VonHeikemen/lsp-zero.nvim',
+        branch = 'v3.x' },
     { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
-    { 'L3MON4D3/LuaSnip' },
+    { 'L3MON4D3/LuaSnip'},
+    { 'rafamadriz/friendly-snippets'},
+    { 'saadparwaiz1/cmp_luasnip'},
     { "folke/zen-mode.nvim" },
     { -- Set lualine as statusline
         'nvim-lualine/lualine.nvim',
-        -- requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-        -- See `:help lualine.txt`
+        dependencies = { 'kyazdani42/nvim-web-devicons' },
         opts = {
             options = {
-                icons_enabled = false,
-                theme = 'onedark',
+                icons_enabled = true,
+                theme = 'catppuccin',
                 component_separators = '|',
                 section_separators = '',
             },
@@ -76,4 +77,5 @@ require('lazy').setup {
         event = "InsertEnter",
         opts = {} -- this is equalent to setup({}) function
     },
+    { 'ThePrimeagen/harpoon' },
 }
