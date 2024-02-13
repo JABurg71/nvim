@@ -1,3 +1,0 @@
-Add this
-Then commit it
-then revoke it.
