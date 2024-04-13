@@ -12,6 +12,8 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]])
+vim.keymap.set("n", "<leader>Y", [["+P]])
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
@@ -19,6 +21,7 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
+vim.keymap.set("n", "q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>F", vim.lsp.buf.format, { desc = "Format File" })
 
@@ -43,12 +46,12 @@ vim.keymap.set("n", "<leader>Q", vim.cmd.q, { desc = "Quit without Save" })
 
 vim.keymap.set("n", "<leader>h", ":vertical help ", { desc = "Help(vertical)" })
 
-vim.keymap.set("n", "<Leader>C", "mC:e ~/.config/nvim<CR>", { desc = "Neovim Config Files" })
-vim.keymap.set("n", "<Leader>L", "mL:e ~/.local/share/nvim/<CR>", { desc = "Neovim Config Files" })
+vim.keymap.set("n", "<Leader>,", ":e ~/.config/nvim<CR>", { desc = "Neovim Config Files" })
+vim.keymap.set("n", "<Leader>L", ":e ~/.local/share/nvim/<CR>", { desc = "Neovim Config Files" })
 
 vim.keymap.set('i', '<C-d>', '<C-W>')
 
 --Folding Setting
-vim.keymap.set('n', '<leader>ff', 'zA')
-vim.keymap.set('n', '<leader>fr', 'zR')
-vim.keymap.set('n', '<leader>fm', 'zM')
+-- vim.keymap.set('n', '<leader>ff', 'zA')
+-- vim.keymap.set('n', '<leader>fr', 'zR')
+-- vim.keymap.set('n', '<leader>fm', 'zM')

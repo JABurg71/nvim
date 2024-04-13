@@ -55,10 +55,9 @@ require('lazy').setup {
     { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
-    { 'L3MON4D3/LuaSnip'},
-    { 'rafamadriz/friendly-snippets'},
-    { 'saadparwaiz1/cmp_luasnip'},
-    { "folke/zen-mode.nvim" },
+    { 'L3MON4D3/LuaSnip' },
+    { 'rafamadriz/friendly-snippets' },
+    { 'saadparwaiz1/cmp_luasnip' },
     { -- Set lualine as statusline
         'nvim-lualine/lualine.nvim',
         dependencies = { 'kyazdani42/nvim-web-devicons' },
@@ -71,11 +70,20 @@ require('lazy').setup {
             },
         },
     },
-    --'github/copilot.vim',
+    'github/copilot.vim',
     {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
         opts = {} -- this is equalent to setup({}) function
     },
     { 'ThePrimeagen/harpoon' },
+    { 'jackMort/ChatGPT.nvim',
+        event = "VeryLazy",
+        config = function()
+            require("chatgpt").setup()
+        end,
+        dependencies = {
+            "folke/trouble.nvim"
+        }
+    },
 }
