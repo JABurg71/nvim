@@ -39,6 +39,7 @@ vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "|", "<C-w>v<C-w>l")
 
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "Netrw" })
+-- vim.keymap.set("n", "<leader>e", ":Oil<CR>", { desc = "Oil File System" })
 vim.keymap.set("n", "<leader>w", vim.cmd.w, { desc = "Save" })
 vim.keymap.set("n", "<leader>W", vim.cmd.wq, { desc = "Save and Quit" })
 vim.keymap.set("n", "<leader>q", vim.cmd.q, { desc = "Quit" })
@@ -55,3 +56,5 @@ vim.keymap.set('i', '<C-d>', '<C-W>')
 -- vim.keymap.set('n', '<leader>ff', 'zA')
 -- vim.keymap.set('n', '<leader>fr', 'zR')
 -- vim.keymap.set('n', '<leader>fm', 'zM')
+--
+vim.keymap.set('n', '<C-f>', '<C-x><C-f>')
