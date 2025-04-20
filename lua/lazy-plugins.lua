@@ -31,6 +31,13 @@ require('lazy').setup {
         name = "catppuccin",
         opts = {},
     },
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
+        -- config = function()
+        --     vim.cmd("colorscheme rose-pine")
+        -- end
+    },
 
     { 'nvim-telescope/telescope.nvim', version = '*',
         dependencies = { 'nvim-lua/plenary.nvim', 'BurntSushi/ripgrep', 'sharkdp/fd' } },
@@ -70,20 +77,19 @@ require('lazy').setup {
             },
         },
     },
-    'github/copilot.vim',
     {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
         opts = {} -- this is equalent to setup({}) function
     },
     { 'ThePrimeagen/harpoon' },
-    { 'jackMort/ChatGPT.nvim',
-        event = "VeryLazy",
-        config = function()
-            require("chatgpt").setup()
-        end,
-        dependencies = {
-            "folke/trouble.nvim"
-        }
-    },
+    -- { 'jackMort/ChatGPT.nvim',
+    --     event = "VeryLazy",
+    --     config = function()
+    --         require("chatgpt").setup()
+    --     end,
+    --     dependencies = {
+    --         "folke/trouble.nvim"
+    --     }
+    -- },
 }

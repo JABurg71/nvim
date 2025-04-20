@@ -12,7 +12,7 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
     -- Replace the language servers listed here
     -- with the ones you want to install
-    ensure_installed = { 'pyright' },
+    ensure_installed = {},
     handlers = {
         lsp_zero.default_setup,
     },
@@ -60,3 +60,23 @@ lsp_zero.setup()
 vim.diagnostic.config({
     virtual_text = true
 })
+
+-- common on_attach function for all LSPs
+local on_attach = function(client, bufnr)
+  -- Only format if LSP supports it
+  if client.server_capabilities.documentFormattingProvider then
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      group = vim.api.nvim_create_augroup("LspFormatOnSave", { clear = true }),
+      buffer = bufnr,
+      callback = function()
+        vim.lsp.buf.format({ bufnr = bufnr })
+      end,
+    })
+  end
+end
+
+-- pass this to each LSP setup
+require('lspconfig').pyright.setup({
+  on_attach = on_attach,
+})
+
