@@ -6,7 +6,7 @@ end, {})
 
 vim.api.nvim_create_user_command("PrintRuntimePaths", function()
   for _, k in ipairs(vim.api.nvim_list_runtime_paths()) do
-    print(k)
+    vim.notify(k)
   end
 end, {})
 

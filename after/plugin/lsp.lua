@@ -32,13 +32,14 @@ cmp_mappings['<S-Tab>'] = nil
 
 lsp_zero.set_preferences({
     suggest_lsp_servers = false,
-    sign_icons = {
-        error = 'E',
-        warn = 'W',
-        hint = 'H',
-        info = 'I'
-    }
+    sign_icons = { }
 })
+    -- sign_icons = {
+    --     error = 'E',
+    --     warn = 'W',
+    --     hint = 'H',
+    --     info = 'I'
+    -- }
 
 lsp_zero.on_attach(function(_, bufnr)
     -- local opts = { buffer = bufnr, remap = false }
