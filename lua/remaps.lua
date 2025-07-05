@@ -1,14 +1,16 @@
-vim.keymap.set("n", "<leader>q", vim.cmd.q, { desc = "Quit" })
-vim.keymap.set("n", "<leader>w", vim.cmd.w, { desc = "Save" })
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "Netrw" })
+vim.keymap.set('n', '<leader>q', vim.cmd.q, { desc = 'Quit' })
+vim.keymap.set('n', '<leader>w', vim.cmd.w, { desc = 'Save' })
+vim.keymap.set('n', '<leader>e', vim.cmd.Ex, { desc = 'Netrw' })
 
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-vim.keymap.set({ "n", "v" }, "<leader>Y", [["+Y]])
-vim.keymap.set({ "n", "v" }, "<leader>p", [["+p]])
-vim.keymap.set({ "n", "v" }, "<leader>P", [["+P]])
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
+vim.keymap.set({ 'n', 'v' }, '<leader>Y', [["+Y]])
+vim.keymap.set({ 'n', 'v' }, '<leader>p', [["+p]])
+vim.keymap.set({ 'n', 'v' }, '<leader>P', [["+P]])
 
-vim.keymap.set("v", "<", "<gv", { desc = "Unindent" })
-vim.keymap.set("v", ">", ">gv", { desc = "Indent" })
+vim.keymap.set('v', '<', '<gv', { desc = 'Unindent' })
+vim.keymap.set('v', '>', '>gv', { desc = 'Indent' })
+
+vim.keymap.set('i', '<C-BS>', '<ESC>xciw', { desc = 'Delete Previous Word' })
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
