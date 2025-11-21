@@ -1,6 +1,8 @@
 vim.keymap.set('n', '<leader>q', vim.cmd.q, { desc = 'Quit' })
 vim.keymap.set('n', '<leader>w', vim.cmd.w, { desc = 'Save' })
 vim.keymap.set('n', '<leader>e', vim.cmd.Ex, { desc = 'Netrw' })
+vim.keymap.set('n', 'H', '_', { desc = 'Netrw' })
+vim.keymap.set('n', 'L', '$', { desc = 'Netrw' })
 
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
 vim.keymap.set({ 'n', 'v' }, '<leader>Y', [["+Y]])
