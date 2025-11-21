@@ -20,6 +20,8 @@ require('lazy').setup({
   },
   { 'ThePrimeagen/harpoon' },
 
+  -- {'nvim-java/nvim-java'},
+
 
   -- Alternatively, use `config = function() ... end` for full control over the configuration.
   -- If you prefer to call `setup` explicitly, use:
